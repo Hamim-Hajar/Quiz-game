@@ -1,36 +1,37 @@
 body{
 background: linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(155,230,254,1) 4%, rgba(1,129,255,1) 100%);
+ margin: 0;
+padding: 0; 
 height: 100vh;
-width: 100%;
-background-position: center;
-background-size: cover;
-
 }
+
 .head{
    display: flex;
    flex-direction: column;
    align-items: center;
 }
 .image{
-    width: 200px;
-    height: 200px;
+    width: 15%;
+    height: auto;
     margin-right: 5%
 }
 
 .image1{
-    width: 200px;
-    height: 200px;  
+    width: 15%;
+    height: auto;  
 }
 .buttonn{
     display: flex;
     flex-direction: column;
     margin-left: 40%;
-    height: 60px;
-    width: 250px;
+    width: 19%;
    
 }
-.playbtn{
-    margin-top: 10%;
+
+ .playbtn{
+    text-decoration: none;
+    text-align: center;
+    margin-top: 7%;
     color:white;
     font-size: 1.5rem;
     font-weight: bold;
@@ -39,9 +40,10 @@ background-size: cover;
     border-radius: 30px;
     padding: 5%;
 }
-#Exit{
+
+.Exit{
     margin-left: 92%;
-    margin-top: 5%; 
+    margin-top: 3%; 
     height: 50px;
     width: 80px;
     border-radius: 30px;
@@ -51,4 +53,75 @@ background-size: cover;
     font-size: 1rem;
     font-weight: bold;
 }
+/*home style*/
+  #question_div{
+    background-color: aqua;
+    align-items: center;
+    color: white;
+    font-size: 1.5rem;
+    font-weight: bold;
+    border-radius: 30px;
+    text-align: center;
+    padding: 1%;
+    margin-left: 380px;  
+    width: 500px;
+    height: 20px;
+}
+/*****/
+.rules{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+.iconrule{
+    background: rgba(234, 213, 31, 0.918);
+    box-shadow: 0 5px 15px rgba(0,0 ,0 ,.5);
+    border-radius: 20px;
+    text-align: center;
+    margin-top: 40px;
+    padding: 5%;
+    color: white;
+    
+   
+  
+}
+.rulediv{
+    background: rgba(255, 255, 255, 0.658);
+    box-shadow: 0 5px 15px rgba(0,0 ,0 ,.5);
+   
+    border-radius: 20px;
+    width: 250px;
+    height: 550px;
+    padding: 1%;
+}
+@media all and (max-width:768px){
+    .buttonn{
+        margin-left: 35%;
+        width: 40%;
+        margin-top: 10%;
+    }
+    .Exit{
+        margin-left: 80%;
+        margin-top: 30%;
+        
+    }
+    #question_div{
+        margin-left: 5%;
+        width: 90%;
+        padding: 2%;
+        margin-top: 10%;
+    }
+    .rulediv{
+        width: 90%;
+    }
+    .image{
+        width: 30%;
+        height: auto;
+     margin-top: 20%;
+    }
+}
+ 
+
+
 
