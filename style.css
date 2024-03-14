@@ -38,12 +38,12 @@ height: 100vh;
     background-color: #FDE93B;
     border: none;
     border-radius: 30px;
-    padding: 5%;
+    padding: 4%;
 }
 
 .Exit{
     margin-left: 92%;
-    margin-top: 3%; 
+    /* margin-top: 3%;  */
     height: 50px;
     width: 80px;
     border-radius: 30px;
@@ -55,9 +55,9 @@ height: 100vh;
 }
 /*home style*/
   #question_div{
-    background-color: aqua;
+    background-color: rgb(255, 255, 255);
     align-items: center;
-    color: white;
+    color: rgb(64, 183, 239);
     font-size: 1.5rem;
     font-weight: bold;
     border-radius: 30px;
@@ -103,13 +103,14 @@ height: 100vh;
     }
     .Exit{
         margin-left: 80%;
-        margin-top: 30%;
+        margin-top: 25%;
+        margin-right: 2%;
         
     }
     #question_div{
         margin-left: 5%;
         width: 90%;
-        padding: 2%;
+        padding: 1%;
         margin-top: 10%;
     }
     .rulediv{
@@ -118,7 +119,13 @@ height: 100vh;
     .image{
         width: 30%;
         height: auto;
-     margin-top: 20%;
+       margin-top: 5%;
+       margin-left: 10%;
+    }
+    .image1{
+        width: 30%;
+        height: auto;  
+        margin-left: 10%;
     }
 }
  
