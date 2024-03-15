@@ -1,7 +1,11 @@
+*{
+    margin: 0;
+    padding: 0; 
+    box-sizing: border-box;
+}
 body{
 background: linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(155,230,254,1) 4%, rgba(1,129,255,1) 100%);
- margin: 0;
-padding: 0; 
+ 
 height: 100vh;
 }
 
@@ -10,6 +14,62 @@ height: 100vh;
    flex-direction: column;
    align-items: center;
 }
+/*home style*/
+.APP{
+    background: rgba(140, 123, 234, 0.311);
+    box-shadow: 0 5px 15px rgba(0,0 ,0 ,.5);
+    width: 90%;
+    max-width: 600px;
+    margin: 100px;
+    border-radius: 10px;
+    padding: 30px;
+}
+.APP h1{
+
+    font-size:25px;
+    color: #FD3B3B;
+    font-weight: 600;
+    border-bottom: 1px solid #333;
+    padding-bottom: 30px;
+}
+.quiz{
+    padding: 20px 0;
+}
+.quiz h2{
+    font-size: 18px;
+    color: #FDE93B;
+    font-weight: 600;
+}
+.btn{
+    background:#fff;
+    color: #222;
+    font-weight: 500;
+    width: 100%;
+    border: 1px solid #222;
+    padding: 10px;
+    margin: 10px 0;
+    text-align: left;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.3;
+}
+.btn :hover{
+background: #222;
+color: #fff;
+}
+#next-btn{
+    background:#001e4d ;
+    color: #fff;
+    font-weight: 500;
+    width: 150px;
+    border:0 ;
+    padding:10px ;
+    margin: 20px auto 0;
+    border-radius: 4px;
+    cursor: pointer;
+    display: none;
+}
+/* end home style*/
 .image{
     width: 15%;
     height: auto;
