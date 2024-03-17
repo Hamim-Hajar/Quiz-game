@@ -1,194 +1,220 @@
-*{
+* {
     margin: 0;
     padding: 0; 
     box-sizing: border-box;
 }
-body{
-background: linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(155,230,254,1) 4%, rgba(1,129,255,1) 100%);
- 
-height: 100vh;
+
+body {
+    font-family: Arial, sans-serif;
+   /* background-image: url(./images/fcrown.jpg); */
+   background: rgb(209,208,229);
+   background: linear-gradient(0deg, rgba(209,208,229,1) 0%, rgba(9,104,121,0.6196603641456583) 35%, rgba(2,64,77,1) 100%);
+   background-size: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.head{
-   display: flex;
-   flex-direction: column;
-   align-items: center;
+.head {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
-/*home style*/
-.APP{
-    background: rgba(140, 123, 234, 0.311);
-    box-shadow: 0 5px 15px rgba(0,0 ,0 ,.5);
-    width: 90%;
-    max-width: 600px;
-    margin: 100px;
-    border-radius: 10px;
-    padding: 30px;
-}
-.APP h1{
 
-    font-size:25px;
-    color: #FD3B3B;
-    font-weight: 600;
-    border-bottom: 1px solid #333;
-    padding-bottom: 30px;
+/* Quiz style */
+.APP {
+    background-color: rgba(255, 255, 255, 0.7);
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 400px;
+    
 }
-.quiz{
-    padding: 20px 0;
+
+h1, h2 {
+    text-align: center;
+    color: #080909;
 }
-.quiz h2{
-    font-size: 18px;
-    color: #FDE93B;
-    font-weight: 600;
+
+.quiz {
+    margin-bottom: 20px;
 }
-.btn{
-    background:#fff;
-    color: #222;
-    font-weight: 500;
+
+.btn {
+    display: block;
     width: 100%;
-    border: 1px solid #222;
-    padding: 10px;
-    margin: 10px 0;
-    text-align: left;
-    border-radius: 4px;
-    cursor: pointer;
-    transition: all 0.3;
-}
-.btn :hover{
-background: #222;
-color: #fff;
-}
-#next-btn{
-    background:#001e4d ;
+    padding: 10px 0;
+    margin-bottom: 10px;
+    font-size: 16px;
+    text-align: center;
+    background-color: #e7c310;
     color: #fff;
-    font-weight: 500;
-    width: 150px;
-    border:0 ;
-    padding:10px ;
-    margin: 20px auto 0;
-    border-radius: 4px;
+    border: none;
+    border-radius: 5px;
     cursor: pointer;
-    display: none;
+    transition: background-color 0.3s ease;
 }
-/* end home style*/
-.image{
+
+.btn:hover {
+    background-color: #f4c700;
+}
+
+.correct {
+    background-color: #15ac4f ;
+}
+
+.incorrect {
+    background-color: #f44336 ;
+}
+
+#next_btn, #next-btn {
+    display: none;
+    width: 100%;
+    padding: 10px 0;
+    font-size: 16px;
+    text-align: center;
+    background-color: #008CBA;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#next_btn:hover, #next-btn:hover {
+    background-color: #007a9b;
+}
+
+/* Other styles */
+
+.image {
     width: 15%;
     height: auto;
-    margin-right: 5%
+    margin-right: 5%;
 }
 
-.image1{
+.image1 {
     width: 15%;
     height: auto;  
 }
-.buttonn{
+
+.buttonn {
     display: flex;
     flex-direction: column;
-    margin-left: 40%;
-    width: 19%;
-   
+    background-color: rgba(255, 255, 255, 0.7);
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 400px;
 }
 
- .playbtn{
+.playbtn {
     text-decoration: none;
+    display: block;
+    width: 100%;
+    padding: 10px 0;
+    margin-bottom: 10px;
+    font-size: 16px;
     text-align: center;
-    margin-top: 7%;
-    color:white;
-    font-size: 1.5rem;
-    font-weight: bold;
-    background-color: #FDE93B;
+    background-color: #e7c310;
+    color: #fff;
     border: none;
-    border-radius: 30px;
-    padding: 4%;
+    border-radius: 5px;
+    cursor: pointer;
 }
 
-.Exit{
-    margin-left: 92%;
-    /* margin-top: 3%;  */
-    height: 50px;
-    width: 80px;
-    border-radius: 30px;
-    background-color: #FD3B3B;
-    color: white;
-    border: none;
-    font-size: 1rem;
-    font-weight: bold;
-}
-/*home style*/
-  #question_div{
-    background-color: rgb(255, 255, 255);
-    align-items: center;
-    color: rgb(64, 183, 239);
-    font-size: 1.5rem;
-    font-weight: bold;
-    border-radius: 30px;
+#Exit {
+    
+    display: block;
+    width: 100%;
+    padding: 10px 0;
+    margin-bottom: 10px;
+    font-size: 16px;
     text-align: center;
-    padding: 1%;
-    margin-left: 380px;  
-    width: 500px;
-    height: 20px;
-}
-/*****/
-.rules{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    background-color: #5973da;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
     
 }
-.iconrule{
+#Exist{
+    display: block;
+    width: 100%;
+    padding: 5px ;
+    font-size: 16px;
+    text-align: center;
+    background-color: #5973da;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+
+    
+}
+
+/* Rule style */
+/* .rules {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+} */
+
+.iconrule {
     background: rgba(234, 213, 31, 0.918);
     box-shadow: 0 5px 15px rgba(0,0 ,0 ,.5);
-    border-radius: 20px;
+    border-radius: 10px;
     text-align: center;
-    margin-top: 40px;
-    padding: 5%;
+    margin-top: 10px;
     color: white;
-    
-   
-  
 }
-.rulediv{
+
+.rulediv {
     background: rgba(255, 255, 255, 0.658);
     box-shadow: 0 5px 15px rgba(0,0 ,0 ,.5);
-   
     border-radius: 20px;
     width: 250px;
     height: 550px;
     padding: 1%;
 }
-@media all and (max-width:768px){
-    .buttonn{
-        margin-left: 35%;
+
+
+@media all and (max-width:768px) {
+    .buttonn {
+        margin-left: 6%;
         width: 40%;
         margin-top: 10%;
     }
-    .Exit{
+
+    .Exit {
         margin-left: 80%;
         margin-top: 25%;
         margin-right: 2%;
-        
     }
-    #question_div{
+
+    #question_div {
         margin-left: 5%;
         width: 90%;
         padding: 1%;
         margin-top: 10%;
     }
-    .rulediv{
+
+    .rulediv {
         width: 90%;
     }
-    .image{
+
+    .image {
         width: 30%;
         height: auto;
-       margin-top: 5%;
-       margin-left: 10%;
+        margin-top: 5%;
+        margin-left: 10%;
     }
-    .image1{
+
+    .image1 {
         width: 30%;
         height: auto;  
         margin-left: 10%;
     }
 }
- 
-
-
-
